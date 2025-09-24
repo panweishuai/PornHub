@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无人机2003的别导管了</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .message-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .message {
+            font-size: 2.8rem;
+            font-weight: bold;
+            line-height: 1.4;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .message {
+                font-size: 2rem;
+            }
+            
+            .message-container {
+                padding: 30px 40px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .message {
+                font-size: 1.6rem;
+            }
+            
+            .message-container {
+                padding: 20px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <div class="message">无人机2003的别导管了</div>
+        <div class="subtitle">单页显示</div>
+    </div>
+</body>
+</html>
